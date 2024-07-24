@@ -1,6 +1,6 @@
 #  [344.反转字符串](https://leetcode.cn/problems/reverse-string/) 
 
-[题目](files/344.jpg)
+![题目](files/344.jpg)
 
 思路： 
 
@@ -17,7 +17,7 @@ def add(a, b):
 
 #  [ 541. 反转字符串II](https://leetcode.com/problems/reverse-string-ii/description/) 
 
-[题目](files/541.jpg)
+![题目](files/541.jpg)
 
 思路： 
 
@@ -35,7 +35,7 @@ def add(a, b):
 
 #  [ 卡码网：54.替换数字 ](https://kamacoder.com/problempage.php?pid=1064) 
 
-[题目](files/kama54.jpg)
+![题目](files/kama54.jpg)
 
 思路： 
 
