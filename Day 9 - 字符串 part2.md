@@ -4,71 +4,43 @@
 
 
 思路
-1. 空间复杂度o(1),因此不能使用额外的空间
-2. 利用双指针, 而且该方法已经不需要判断奇偶数
-
+1. 注意string 和 list 转换
+2. 直接转换，或者用双指针
+3. 双指针注意return 在while 以外
 
   The solution can be found in the [leetcode541.py](codes/leetcode541.py) file.
 
 ```python
-def reverse_string(s):
-    left, right = 0, len(s) - 1
-    while left < right:
-        # Swap characters
-        s[left], s[right] = s[right], s[left]
-        # Move pointers
-        left += 1
-        right -= 1
-        return " ".join(s)
+    def reverseWords(self, s: str) -> str:
+        s = s.strip()
+        # Split the string into words, reverse the list of words, and join them back together
+        reversed_words = ' '.join(reversed(s.split()))
+        return reversed_words
+
+    def reverseTwopoint(self, s: str) -> str:
+        words = s.split()
+        l , r = 0 , len(words) - 1
+        while l < r:
+            words[l] , words[r] = words[r] , words[l]
+            l += 1 
+            r -= 1 
+        return " ".join(words) 
+
 ```
 #  [卡码网：55.右旋转字符串](https://kamacoder.com/problempage.php?pid=1065) 
 
-![题目](jpgs/541.jpg)
-
-思路
-1. range 函数with 3 arguments （start, stop, step)
-2. .append() 是 list Method. 合并list的item
-3. .join() 是 string Method. 合并转换list 成 string
-
-
-
-```python
-class Solution:
-    def reverseStr(self, s: str, k: int) -> str:
-        res = []
-        for i in range(0, len(s), 2 * k):
-            # Reverse the first k characters in the current 2k block
-            res.append(s[i:i+k][::-1])
-            # Append the remaining characters in the current 2k block as is
-            res.append(s[i+k:i+2*k])
-        return ''.join(res)
-    
-
-# Example usage:
-sol = Solution()
-s1 = "goodmorning"
-k = 2
-result = sol.reverseStr(s1, k)
-print(result)  # Output should be the modified string after applying the logic
-
-```
-
-
-
-#  [卡码网：54.替换数字 ](https://kamacoder.com/problempage.php?pid=1064) 
-
 ![题目](jpgs/kama55.jpg)
 
-思路： 
+思路
 1. 
  
- 
+
+
+
 ```python
- 
 
 ```
-
-
+ 
 
 
 
