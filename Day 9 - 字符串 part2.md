@@ -1,6 +1,6 @@
-#  [344.反转字符串](https://leetcode.cn/problems/reverse-string/) 
+#  [151.翻转字符串里的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) 
 
-![题目](jpgs/344.jpg)
+![题目](jpgs/151.jpg)
 
 
 思路
@@ -19,10 +19,9 @@ def reverse_string(s):
         # Move pointers
         left += 1
         right -= 1
+        return " ".join(s)
 ```
-
-
-#  [ 541. 反转字符串II](https://leetcode.com/problems/reverse-string-ii/description/) 
+#  [卡码网：55.右旋转字符串](https://kamacoder.com/problempage.php?pid=1065) 
 
 ![题目](jpgs/541.jpg)
 
@@ -56,33 +55,28 @@ print(result)  # Output should be the modified string after applying the logic
 
 
 
-#  [ 卡码网：54.替换数字 ](https://kamacoder.com/problempage.php?pid=1064) 
+#  [卡码网：54.替换数字 ](https://kamacoder.com/problempage.php?pid=1064) 
 
-![题目](jpgs/kama54.jpg)
+![题目](jpgs/kama55.jpg)
 
 思路： 
-1. string是immutable，转换成list操作
+1. 
  
  
 ```python
-    def change(self, s: str) -> str:
-        """
-        Replace all digits in the input string with the word 'number'.
-
-        Args:
-        s (str): The input string.
-
-        Returns:
-        str: The modified string with all digits replaced by 'number'.
-        """
-        lst = list(s)  # Convert the string to a list of characters
-        for i in range(len(lst)):  # Iterate over the list by index
-            if lst[i].isdigit():  # Check if the character is a digit
-                lst[i] = "number"  # Replace the digit with the string "number"
-        return ''.join(lst)  # Join the list back into a string
-
+ 
 
 ```
+
+
+
+
+
+
+
+
+
+
 
 
 # References
