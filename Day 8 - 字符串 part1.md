@@ -5,6 +5,8 @@
 
 1. 思路
 
+  The solution can be found in the [leetcode541.py](codes/leetcode541.py) file.
+
 
 ```python
 def add(a, b):
