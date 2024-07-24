@@ -26,11 +26,12 @@ def reverse_string(s):
 
 ![题目](jpgs/541.jpg)
 
-思路： 
+思路
+1. range 函数with 3 arguments （start, stop, step)
+2. .append() 是 list Method. 合并list的item
+3. .join() 是 string Method. 合并转换list 成 string
 
-# Code Block  
 
-Here is an example of a Python function using fenced code blocks:
 
 ```python
 def add(a, b):
