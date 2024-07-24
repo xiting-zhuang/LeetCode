@@ -3,15 +3,22 @@
 ![题目](jpgs/344.jpg)
 
 
-1. 思路
+思路
+1. 空间复杂度o(1),因此不能使用额外的空间
+2. 利用双指针, 而且该方法已经不需要判断奇偶数
+
 
   The solution can be found in the [leetcode541.py](codes/leetcode541.py) file.
 
-
 ```python
-def add(a, b):
-    return a + b
-
+def reverse_string(s):
+    left, right = 0, len(s) - 1
+    while left < right:
+        # Swap characters
+        s[left], s[right] = s[right], s[left]
+        # Move pointers
+        left += 1
+        right -= 1
 ```
 
 
